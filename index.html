@@ -19,17 +19,19 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#quienes-somos">Quiénes somos</a></li>
-            <li><a href="#actividades">Actividades</a></li>
-            <li><a href="#voluntariado">Voluntariado</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Nosotros</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <div class="hero-content">
-      <h1>Juntos hacemos la diferencia</h1>
+      <img src="images/portadaSinFondo.png" alt="Voluntarios" class="hero-img" />
+      <h1 id="typewriter"></h1>
       <p>Somos un grupo de voluntarios comprometidos con nuestra comunidad.</p>
       <a href="#voluntariado" class="btn">Únete a nosotros</a>
     </div>
@@ -37,9 +39,18 @@
   </section>
 
   <!-- QUIÉNES SOMOS -->
-  <section id="quienes-somos" class="section">
-    <h2>Quiénes somos</h2>
-    <p>Corazones Solidarios es un grupo de voluntarios dedicados a apoyar a quienes más lo necesitan. Creemos en el poder de la comunidad y el trabajo en equipo para generar un cambio real.</p>
+  <section id="quienes-somos" class="section quienes-somos-full">
+    <div class="quienes-grid">
+      <div class="quienes-texto">
+        <h2>Quiénes somos</h2>
+        <p>Somos un grupo de jóvenes de Cañete comprometidos con nuestra comunidad. Creemos en el poder del trabajo en equipo para generar un cambio real en la vida de quienes más lo necesitan.</p>
+        <blockquote class="quienes-frase">"Porque cada niño y niña merece un futuro lleno de oportunidades, educación, amor y esperanza. ¡Juntos construimos un mejor mañana!"</blockquote>
+        <a href="quienes-somos.html" class="btn btn-rojo" style="margin-top:1.5rem;">Únete</a>
+      </div>
+      <div class="quienes-logo">
+        <img src="images/logoLR.png" alt="Corazones Solidarios" />
+      </div>
+    </div>
   </section>
 
   <!-- ACTIVIDADES -->
@@ -47,56 +58,159 @@
     <h2>Nuestras actividades</h2>
     <div class="cards">
       <div class="card">
-        <img src="images/actividad1.jpg" alt="Actividad 1" onerror="this.style.display='none'" />
+        <img src="images/foto1.jpeg" alt="Colectas solidarias" />
         <h3>Colectas solidarias</h3>
         <p>Organizamos colectas de alimentos, ropa y útiles escolares para familias en situación de vulnerabilidad.</p>
       </div>
       <div class="card">
-        <img src="images/actividad2.jpg" alt="Actividad 2" onerror="this.style.display='none'" />
+        <img src="images/foto3.jpeg" alt="Apoyo comunitario" />
         <h3>Apoyo comunitario</h3>
         <p>Brindamos asistencia directa a personas y familias que necesitan una mano.</p>
       </div>
       <div class="card">
-        <img src="images/actividad3.jpg" alt="Actividad 3" onerror="this.style.display='none'" />
+        <img src="images/foto5.jpeg" alt="Eventos solidarios" />
         <h3>Eventos solidarios</h3>
         <p>Realizamos eventos para recaudar fondos y visibilizar las necesidades de nuestra comunidad.</p>
       </div>
     </div>
+    <a href="actividades.html" class="btn btn-rojo" style="margin-top:2.5rem;display:inline-block;">Ver todas las actividades</a>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section id="noticias" class="section">
+    <h2>Últimas noticias</h2>
+    <p class="faq-subtitulo">Enterate de lo que estamos haciendo en la comunidad.</p>
+    <div class="cards noticias-grid">
+
+      <div class="card noticia-card">
+        <img src="images/pollada.jpeg" alt="Pollada benéfica" />
+        <div class="noticia-body">
+          <span class="noticia-tag">Recaudación</span>
+          <h3>Pollada benéfica</h3>
+          <p>Organizamos una pollada para recaudar fondos y seguir apoyando a las familias más vulnerables de Cañete.</p>
+          <a href="noticias.html" class="btn-leer">Leer más</a>
+        </div>
+      </div>
+
+      <div class="card noticia-card">
+        <img src="images/rifa.jpeg" alt="Rifa solidaria" />
+        <div class="noticia-body">
+          <span class="noticia-tag">Recaudación</span>
+          <h3>Rifa solidaria</h3>
+          <p>Realizamos una rifa para financiar nuestras actividades solidarias en la comunidad de Cañete.</p>
+          <a href="noticias.html" class="btn-leer">Leer más</a>
+        </div>
+      </div>
+
+      <div class="card noticia-card">
+        <img src="images/foto6.jpeg" alt="Navidad La Quebrada" />
+        <div class="noticia-body">
+          <span class="noticia-tag">Voluntariado</span>
+          <h3>Navidad en La Quebrada</h3>
+          <p>Visitamos el CC. PP. La Quebrada compartiendo momentos maravillosos con niños y personas de la tercera edad.</p>
+          <a href="noticias.html" class="btn-leer">Leer más</a>
+        </div>
+      </div>
+
+    </div>
+    <a href="noticias.html" class="btn btn-rojo" style="margin-top:2.5rem;display:inline-block;">Ver todas las noticias</a>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-alt" style="margin-top: 3rem;">
+    <h2>Preguntas frecuentes</h2>
+    <p class="faq-subtitulo">Resolvemos tus dudas sobre nuestra labor social.</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo puedo unirme como voluntario? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Completa el formulario en la sección de voluntariado. Nos ponemos en contacto para coordinar una reunión de bienvenida.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Qué tipo de actividades realizan? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Organizamos colectas de alimentos, útiles y ropa, visitas a familias en situación vulnerable, y eventos solidarios para recaudar fondos.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Necesito experiencia previa? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No. Solo necesitás ganas de ayudar, responsabilidad y compromiso. Nosotros te orientamos en todo momento.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Con qué frecuencia se realizan las actividades? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Las actividades varían según el mes. Generalmente hay al menos una acción solidaria por mes, con convocatorias previas por nuestros canales.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo puedo donar si no puedo ser voluntario? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Puedes contactarnos por email y te indicamos cómo hacer llegar tu donación de alimentos, ropa o dinero.</p></div>
+      </div>
+
+    </div>
   </section>
 
   <!-- VOLUNTARIADO -->
-  <section id="voluntariado" class="section">
-    <h2>Sumate como voluntario</h2>
-
-    <div class="mision">
-      <p class="mision-frase">"Llevar felicidad a los que más lo necesiten"</p>
-      <p>Más allá de ser un grupo con labor social, somos una familia. Y como familia, creemos de corazón en devolverle la felicidad a quien más la necesita.</p>
-      <p>Se les pide que solo se una gente que nos ayude a cumplir nuestra misión.</p>
+  <section id="voluntariado" class="voluntariado-section">
+    <div class="voluntariado-inner">
+      <div class="voluntariado-top">
+        <h2>Únete como voluntario</h2>
+        <p class="vol-frase">"Llevar felicidad a los que más lo necesiten"</p>
+        <p>Somos una familia comprometida con nuestra comunidad. Solo pedimos gente con ganas de hacer el bien.</p>
+      </div>
+      <div class="voluntariado-requisitos">
+        <div class="vol-req">
+          <div class="vol-req-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <strong>Responsabilidad</strong>
+          <p>Cumplir con los compromisos del grupo.</p>
+        </div>
+        <div class="vol-req">
+          <div class="vol-req-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <strong>Compromiso</strong>
+          <p>Involucrarse de corazón en cada acción.</p>
+        </div>
+        <div class="vol-req">
+          <div class="vol-req-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <strong>Tiempo</strong>
+          <p>Disponibilidad para participar en actividades.</p>
+        </div>
+      </div>
+      <a href="contacto.html" class="btn" style="background:white;color:#8e0307;margin-top:2.5rem;">Contáctanos</a>
     </div>
-
-    <div class="requisitos">
-      <h3>Requisitos</h3>
-      <ul>
-        <li>Responsabilidad</li>
-        <li>Compromiso</li>
-        <li>Tiempo</li>
-      </ul>
-    </div>
-
-    <p style="margin-top: 2rem;">Si cumplís con estos valores, completá el formulario y nos ponemos en contacto.</p>
-    <form id="form-voluntario">
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu email" required />
-      <textarea placeholder="¿Por qué querés ser voluntario?" rows="4"></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contacto">
-    <p>© 2026 Corazones Solidarios · Todos los derechos reservados</p>
+  <footer>
     <p>Contacto: <a href="mailto:info@corazonessolidarios.org">info@corazonessolidarios.org</a></p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=61580098306683" target="_blank" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/corazones_solidarios.pe" target="_blank" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.tiktok.com/@corazones_solidarios.pe" target="_blank" aria-label="TikTok">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        TikTok
+      </a>
+    </div>
+    <p class="footer-copy">© 2026 Corazones Solidarios · Todos los derechos reservados</p>
   </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/51944324914" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.471 2.027 7.773L0 32l8.437-2.01A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.073 22.374c-.334.937-1.956 1.786-2.687 1.898-.687.106-1.552.15-2.504-.158-.578-.185-1.32-.432-2.267-.847-3.988-1.724-6.594-5.74-6.794-6.007-.2-.267-1.628-2.164-1.628-4.128s1.03-2.928 1.395-3.328c.365-.4.797-.5 1.063-.5.266 0 .531.002.764.014.245.012.573-.093.897.684.334.8 1.133 2.764 1.233 2.964.1.2.167.433.033.7-.133.267-.2.433-.4.666-.2.234-.42.522-.6.7-.2.2-.408.416-.175.816.233.4 1.035 1.707 2.22 2.765 1.525 1.358 2.81 1.778 3.21 1.978.4.2.633.167.867-.1.233-.267.998-1.166 1.265-1.566.267-.4.533-.333.9-.2.366.133 2.328 1.098 2.728 1.298.4.2.666.3.766.467.1.166.1.966-.234 1.903z"/>
+    </svg>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
