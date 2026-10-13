@@ -8,6 +8,16 @@
 </head>
 <body>
 
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <ul id="nav-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="quienes-somos.html">Nosotros</a></li>
+    <li><a href="actividades.html" class="nav-active">Actividades</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+
   <div class="act-hero">
 
     <header class="header-page">
@@ -17,13 +27,16 @@
           <span>Corazones Solidarios</span>
         </div>
         <nav>
-          <ul>
+          <ul class="nav-desktop">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="quienes-somos.html">Nosotros</a></li>
             <li><a href="actividades.html" class="nav-active">Actividades</a></li>
             <li><a href="noticias.html">Noticias</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
+          <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span></span><span></span><span></span>
+          </button>
         </nav>
       </div>
     </header>
@@ -138,6 +151,26 @@
     const txt = 'Nuestras actividades';
     const el = document.getElementById('act-typewriter');
     let i = 0;
+    function type() { if (i < txt.length) { el.textContent += txt[i++]; setTimeout(type, 80); } }
+    type();
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const overlay = document.getElementById('nav-overlay');
+    function cerrarMenu() {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      overlay.classList.toggle('open');
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+    overlay.addEventListener('click', cerrarMenu);
+    navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', cerrarMenu));
     function type() {
       if (i < txt.length) { el.textContent += txt[i++]; setTimeout(type, 80); }
     }

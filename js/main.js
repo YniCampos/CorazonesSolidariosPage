@@ -19,3 +19,24 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (!isOpen) item.classList.add('open');
   });
 });
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const overlay = document.getElementById('nav-overlay');
+if (hamburger) {
+  function cerrarMenu() {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  }
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    if (overlay) overlay.classList.toggle('open');
+    document.body.classList.toggle('menu-open', isOpen);
+  });
+  if (overlay) overlay.addEventListener('click', cerrarMenu);
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', cerrarMenu));
+}
